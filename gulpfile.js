@@ -4,6 +4,8 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
+const sassGlob = require('gulp-sass-glob');
+const plumber = require('gulp-plumber');
 
 const del = require('del');
 
@@ -43,7 +45,9 @@ function templates() {
 // scss
 function styles() {
     return gulp.src('./src/styles/app.scss')
+        .pipe(plumber())
         .pipe(sourcemaps.init())
+        .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
@@ -58,6 +62,7 @@ function clean() {
 // webpack
 function scripts() {
     return gulp.src('src/scripts/app.js')
+        .pipe(plumber())
         .pipe(gulpWebpack(webpackConfig, webpack)) 
         .pipe(gulp.dest(paths.scripts.dest));
 }
