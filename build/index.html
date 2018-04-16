@@ -2,29 +2,237 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Добро пожаловать</title>
+    <title>Главная</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-carral.ico">
     <script src="./assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Главная</h1>
-    <form>
-      <label for="email">email</label>
-      <input name="email" id="email">
-      <label for="password">password</label>
-      <input name="password" id="password">
-      <button>Войти</button>
-    </form>
-    <h2>Меню</h2>
-    <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="my-works.html">Мои работы</a></li>
-      <li><a href="blog.html">Блог</a></li>
-    </ul>
+    <div class="wrapper">
+      <h1 class="visuallyhidden">Главная </h1>
+      <section class="section hero">
+        <header class="header">
+          <div class="header__top">
+            <div class="header__wrap">
+              <div class="header__text">Комплексные решения в сфере строительных услуг</div>
+              <div class="header__contacts">
+                <ul class="contacts">
+                  <li class="contacts__item">info@carral.com</li>
+                  <li class="contacts__item">+00(123)456 78 90</li>
+                  <li class="contacts__item">+00(123)456 78 90</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__main">
+            <div class="header__logo"><a class="logo" href="#"><img class="logo__img" src="./assets/images/logo.png"></a></div>
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">ГЛАВНАЯ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О КОМПАНИИ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">УСЛУГИ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">ОБЪЕКТЫ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">НОВОСТИ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">ДОКУМЕНТЫ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">КОНТАКТЫ</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="slider wrap" id="slides">
+          <div class="slider__content b-carousel js-carousel">
+            <ul class="slider__list b-carousel__wrap js-carousel__wrap">
+              <li class="slider__item b-carousel__item">
+                <div class="slider__info">
+                  <div class="slider__desc">
+                    <h2 class="slider__title">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</h2>
+                    <div class="slider__text">
+                      <p>Высококвалифицированные бригады электриков выполнят работы по монтажу и демонтажу электросетей и электрооборудованию. Качественное выполнение работ по самым высоким  требованиям к электробезопастности.</p>
+                    </div>
+                    <div class="button"><a class="button__link" href="#">ПОДРОБНЕЕ</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item b-carousel__item">
+                <div class="slider__info">
+                  <div class="slider__desc">
+                    <h2 class="slider__title">КРУПНОЗЕРНИСТЫЙ И МЕЛКОЗЕРНИСТЫЙ БЕТОН</h2>
+                    <div class="slider__text">
+                      <p>Высококвалифицированные бригады электриков выполнят работы по монтажу и демонтажу электросетей и электрооборудованию. Качественное выполнение работ по самым высоким  требованиям к электробезопастности.</p>
+                    </div>
+                    <div class="button"><a class="button__link" href="#">ПОДРОБНЕЕ</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item b-carousel__item">
+                <div class="slider__info">
+                  <div class="slider__desc">
+                    <h2 class="slider__title">БЕТОН ЛЕТНИЙ И ЗИМНИЙ В КИЕВЕ</h2>
+                    <div class="slider__text">
+                      <p>Высококвалифицированные бригады электриков выполнят работы по монтажу и демонтажу электросетей и электрооборудованию. Качественное выполнение работ по самым высоким  требованиям к электробезопастности.</p>
+                    </div>
+                    <div class="button"><a class="button__link" href="#">ПОДРОБНЕЕ</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__buttons">
+              <button class="controls slider__controls-prev b-carousel__prev js-carousel__prev" type="button">
+                <div class="controls__triangle-prev"></div>
+              </button>
+              <button class="controls slider__controls-next b-carousel__next js-carousel__next" type="button">
+                <div class="controls__triangle-next"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-desc">
+          <h2 class="hero-desc__title">Оказываемые Услуги</h2>
+          <div class="hero-desc__text"> 
+            <p>Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section service">
+        <div class="service__content">
+          <ul class="service__list">
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">ДЕМОНТАЖНЫЕ РАБОТЫ</a></div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</a></div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">САНТЕХНИЧЕСКИЕ РАБОТЫ</a></div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">ОТДЕЛОЧНЫЕ РАБОТЫ</a></div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">КРОВЕЛЬНЫЕ РАБОТЫ</a></div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <div class="service__wrap">
+                  <div class="service__zoom"><img class="service__zoom-logo" src="./assets/images/zoom.png"></div>
+                </div>
+              </div>
+              <div class="service__button"><a class="service__link" href="#">УКЛАДКА ТРОТУАРНОЙ ПЛИТКИ</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section news">
+        <h2 class="news__title">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <div class="news__image news__image-one"></div>
+            <div class="news-desc">
+              <h3 class="news-desc__title">Обеспечение нашей деятельности и идейные соображения </h3>
+              <div class="news-desc__text">
+                <p>Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и... </p>
+              </div>
+              <div class="news-desc__btn"><a class="news-desc__btn-link" href="#">ПОДРОБНЕЕ</a></div>
+            </div>
+          </li>
+          <li class="news__item news__item--right">
+            <div class="news__image news__image-two"></div>
+            <div class="news-desc">
+              <h3 class="news-desc__title">Обеспечение нашей деятельности и идейные соображения </h3>
+              <div class="news-desc__text">
+                <p>Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и...  </p>
+              </div>
+              <div class="news-desc__btn"><a class="news-desc__btn-link" href="#">ПОДРОБНЕЕ</a></div>
+            </div>
+          </li>
+          <li class="news__item">
+            <div class="news__image news__image-three"></div>
+            <div class="news-desc">
+              <h3 class="news-desc__title">Обеспечение нашей деятельности и идейные соображения </h3>
+              <div class="news-desc__text">
+                <p>Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и...  </p>
+              </div>
+              <div class="news-desc__btn"><a class="news-desc__btn-link" href="#">ПОДРОБНЕЕ</a></div>
+            </div>
+          </li>
+          <li class="news__item news__item--right">
+            <div class="news__image news__image-four"></div>
+            <div class="news-desc">
+              <h3 class="news-desc__title">Обеспечение нашей деятельности и идейные соображения </h3>
+              <div class="news-desc__text">
+                <p>Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и...  </p>
+              </div>
+              <div class="news-desc__btn"><a class="news-desc__btn-link" href="#">ПОДРОБНЕЕ</a></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section contacts-footer">
+        <div class="slider partners">
+          <div class="partners__list">
+            <li class="partners__item"><img class="partners__image" src="./assets/images/intel.png"></li>
+            <li class="partners__item"><img class="partners__image" src="./assets/images/acer.png"></li>
+            <li class="partners__item"><img class="partners__image" src="./assets/images/lg.png"></li>
+            <li class="partners__item"><img class="partners__image" src="./assets/images/sp.png"></li>
+            <li class="partners__item"><img class="partners__image" src="./assets/images/nokia.png"></li>
+            <li class="partners__item"><img class="partners__image" src="./assets/images/amd.png"></li>
+          </div>
+          <div class="slider__buttons">
+            <button class="controls slider__controls-prev" id="previous" type="button"></button>
+            <button class="controls slider__controls-next" id="next" type="button"></button>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__content">
+            <div class="footer__info">
+              <div class="footer__logo"><a class="logo" href="#"><img class="logo__img" src="./assets/images/logo.png"></a></div>
+              <div class="footer__text">Комплексные решения в сфере строительных услуг</div>
+              <div class="footer__copy">© 2018 Строительная компания "Каррал".</div>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title">Навигация</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Услуги</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">О компании</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Объекты</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Документы</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>
