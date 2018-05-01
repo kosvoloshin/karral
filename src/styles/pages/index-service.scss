@@ -117,17 +117,16 @@
     position: relative;
 
     &:hover {
-        .service__wrap {
+        .image-wrap {
             background-color: rgba(0, 0, 0, 0.7);
             transition: .2s;
         }
-
         .service__link {
             background-color: #c32328;
             transition: .2s;
         }
 
-        .service__zoom {
+        .image-wrap__zoom {
             opacity: 1;
             transition: .2s;
         }
@@ -182,12 +181,12 @@
     background-image: url(../images/service-6.jpg);
 }
 
-.service__wrap {
+.image-wrap {
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
 }
 
-.service__zoom {
+.image-wrap__zoom {
     height: 54px;
     width: 54px;
     background-color: #c32328;
@@ -206,7 +205,11 @@
     }
 }
 
-.service__zoom-logo {
+.image-wrap__zoom_obj {
+    top: 50%;
+}
+
+.image-wrap__zoom-logo {
     height: 35%;
 }
 

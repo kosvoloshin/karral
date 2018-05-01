@@ -1,0 +1,40 @@
+extends ../template
+
+block variables
+    - var title = 'Объекты'
+
+block content
+    .wrapper
+        include ../common/header.pug
+        .crumbs
+            ul.crumbs__list
+                li.crumbs__item
+                    a.crumbs__link(href="index.html"): img.crumbs__breadcrumbs(alt="home" src="./assets/images/home.png")
+                li.crumbs__item
+                    a.crumbs__link(href="#"): img.crumbs__breadcrumbs.crumbs__breadcrumbs_arrow(alt="arrow" src="./assets/images/arrow.png")    
+                li.crumbs__item 
+                    a.crumbs__link(href="#") 
+                        .crumbs__breadcrumbs Объекты
+        section.section.objects
+            h1.visuallyhidden Objects
+            .objects__desc
+               h2.objects__title Объекты
+               .objects__text
+                    p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. 
+            include ../common/objects-list.pug
+        .pagination
+            button(type="button").controls.controls_pagination
+                .controls__triangle-prev
+            ul.pagination__list
+                li.pagination__item: a.pagination__link(href="#") 1
+                li.pagination__item: a.pagination__link(href="#") ...
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 31
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 32
+                li.pagination__item: a.pagination__link.active(href="#") 33
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 34
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 35
+                li.pagination__item: a.pagination__link(href="#") ...
+                li.pagination__item: a.pagination__link(href="#") 87
+            button(type="button").controls.controls_pagination
+                .controls__triangle-next
+        include ../common/footer.pug    

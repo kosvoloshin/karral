@@ -1,7 +1,7 @@
 extends ../template
 
 block variables
-    - var title = 'Новости'
+    - var title = 'Услуги'
 
 block content
     .wrapper
@@ -13,33 +13,35 @@ block content
                 li.crumbs__item
                     a.crumbs__link(href="#"): img.crumbs__breadcrumbs.crumbs__breadcrumbs_arrow(alt="arrow" src="./assets/images/arrow.png")    
                 li.crumbs__item 
-                    a.crumbs__link(href="news.html") 
-                        .crumbs__breadcrumbs Новости   
+                    a.crumbs__link(href="service.html") 
+                        .crumbs__breadcrumbs Услуги   
                 li.crumbs__item
                     a.crumbs__link(href="#"): img.crumbs__breadcrumbs.crumbs__breadcrumbs_arrow(alt="arrow" src="./assets/images/arrow-left.png")
                 li.crumbs__item 
                     a.crumbs__link(href="#") 
-                        .crumbs__breadcrumbs Новость такая то
+                        .crumbs__breadcrumbs Демонтажные работы
         section.section.blog
             h1.visuallyhidden Blog
             .blog__content
                 .blog__main
-                    h2.blog__title Новость такая то
+                    h2.blog__title Демонтажные работы
                     .blog__text
                         p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет
                     .blog__image: img.blog__pic(alt="image-blog" src="./assets/images/blog-image-1.jpg")
                     .blog__text
                         p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития.
                     .blog__image: img.blog__pic(alt="image-blog" src="./assets/images/blog-image-2.jpg")
-                    .blog__text
+                    .blog__text.blog__text_service-in
                         p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития.
                         |   Разнообразный и богатый опыт начало повседневной работы по формированию позиции требуют от нас анализа соответствующий условий активизации. Равным образом консультация с широким активом позволяет выполнять важные задания по разработке дальнейших направлений развития. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации модели развития. Равным образом укрепление и развитие структуры требуют от нас анализа направлений прогрессивного развития. Не следует, однако забывать, что сложившаяся структура организации позволяет оценить значение систем массового участия. Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
-                    .blog__date 28.09.2018
                 aside.aside
-                    h3.aside__title Другие новости
-                    .aside__image
-                    h4.aside__subject Обеспечение нашей деятельности и идейные соображения 
-                    .aside__text
-                        p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и... информационно-пропагандистское 
-                    .aside__button: a.aside__link(href="news.html") Подробнее
-        include ../common/footer.pug
+                    h3.aside__title Оказываемые услуги
+                    .aside-nav
+                        ul.aside-nav__list
+                            li.aside-nav__item: a.aside-nav__link.active(href="#") демонтажные работы
+                            li.aside-nav__item: a.aside-nav__link(href="#") электромонтажные работы
+                            li.aside-nav__item: a.aside-nav__link(href="#") сантехнические работы
+                            li.aside-nav__item: a.aside-nav__link(href="#") отделочные работы
+                            li.aside-nav__item: a.aside-nav__link(href="#") кровельные работы
+                            li.aside-nav__item: a.aside-nav__link(href="#") укладка тротуарной плитки
+        include ../common/footer.pug    

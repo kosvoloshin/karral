@@ -52,7 +52,7 @@ function styles() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sassGlob())
-        .pipe(sass(/*{outputStyle: 'compressed'}*/))
+        .pipe(sass(/*{outputStyle: 'compressed'}*/)) ///////// закомментировано чтобы не минифицировался итоговый css файл
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))
