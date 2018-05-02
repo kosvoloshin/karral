@@ -224,6 +224,12 @@
     }
 }
 
+.footer__nav-item.active {
+    .footer__nav-link {
+        color: #c32328;
+    }
+}
+
 .footer__nav-link {
     text-decoration: none;
     font-family: 'Open Sans reg';

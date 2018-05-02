@@ -1,11 +1,33 @@
 extends ../template
 
 block variables
-    - var title = 'Каррал'
+    - var title = 'Главная'
 
 block content
     .wrapper
-        include ../common/header.pug
+        header.header
+            .header__top
+                .header__wrap
+                    .header__text Комплексные решения в сфере строительных услуг
+                    .header__contacts
+                        ul.contacts
+                            li.contacts__item info@carral.com
+                            li.contacts__item +00(123)456 78 90
+                            li.contacts__item +00(123)456 78 90
+            .header__main
+                .header__logo
+                    a.logo(href="index.html"): img.logo__img(alt="logo" src="./assets/images/logo.png")
+                .menu
+                    ul.menu__list
+                        li.menu__item.active: a.menu__link(href="index.html") ГЛАВНАЯ
+                        li.menu__item: a.menu__link(href="#") О КОМПАНИИ
+                        li.menu__item: a.menu__link(href="service.html") УСЛУГИ
+                        li.menu__item: a.menu__link(href="objects.html") ОБЪЕКТЫ
+                        li.menu__item: a.menu__link(href="news.html") НОВОСТИ
+                        li.menu__item: a.menu__link(href="#") ДОКУМЕНТЫ
+                        li.menu__item: a.menu__link(href="#") КОНТАКТЫ
+                button(type="button").hamburger#openFull
+                    .hamburger__menu
         section.section.hero
             h1.visuallyhidden Hero
             .slider.wrap
@@ -127,7 +149,7 @@ block content
                         .news-desc__text
                             p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и... 
                         .news-desc__btn: a.news-desc__btn-link(href="news-in.html") ПОДРОБНЕЕ
-                li.news__item.news__item--right
+                li.news__item
                     .news__image
                     .news-desc
                         h3.news-desc__title Обеспечение нашей деятельности и идейные соображения 
@@ -141,7 +163,7 @@ block content
                         .news-desc__text
                             p Идейные соображения высшего порядка, а также консультация с широким активом способствует подготовки и...  
                         .news-desc__btn: a.news-desc__btn-link(href="news-in.html") ПОДРОБНЕЕ
-                li.news__item.news__item--right
+                li.news__item
                     .news__image
                     .news-desc
                         h3.news-desc__title Обеспечение нашей деятельности и идейные соображения 
@@ -221,4 +243,20 @@ block content
                             slider.goToNextSlide();
                         });
                     });
-        include ../common/footer.pug
+        footer.footer
+            .footer__content
+                .footer__info
+                    .footer__logo
+                        a.logo(href="index.html"): img.logo__img(alt="logo" src="./assets/images/logo-footer.png")
+                    .footer__text Комплексные решения в сфере строительных услуг
+                    .footer__copy © 2018 Строительная компания "Каррал".
+                .footer__nav
+                    h3.footer__nav-title Навигация
+                    ul.footer__nav-list
+                        li.footer__nav-item.active: a.footer__nav-link(href="index.html") Главная
+                        li.footer__nav-item: a.footer__nav-link(href="service.html") Услуги
+                        li.footer__nav-item: a.footer__nav-link(href="news.html") Новости
+                        li.footer__nav-item: a.footer__nav-link(href="#") Контакты
+                        li.footer__nav-item: a.footer__nav-link(href="#") О компании
+                        li.footer__nav-item: a.footer__nav-link(href="objects.html") Объекты
+                        li.footer__nav-item: a.footer__nav-link(href="#") Документы

@@ -215,8 +215,8 @@
                     // Prevent default action on touchmove event
                     // This solves the bug with Android phones
                     // https://github.com/dirkgroenen/simple-jQuery-slider/issues/11
-                    if(e.type == touchmoveEvent)
-                        e.preventDefault();
+                    //if(e.type == touchmoveEvent)
+                        //e.preventDefault();
 
                     if(isDragging){
                         // Calculate given distance in pixels to percentage
@@ -488,7 +488,3 @@
     };
 
 })(jQuery);
-
-$(document).ready(function(){
-	$(".slider__list").simpleSlider();
-});

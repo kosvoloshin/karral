@@ -8,6 +8,7 @@
     margin: 0 auto;
     display: flex;
     padding-top: 100px;
+    padding-bottom: 130px;
 
     @include desktop {
         max-width: 1140px;
@@ -19,27 +20,34 @@
 
     @include tablets {
         max-width: 95%;
+        flex-direction: column;
     }
 
     @include phones {
         padding-top: 60px;
+        padding-bottom: 70px;
     }
 }
 
 .blog__main {
     margin: 0 20px;
-    width: 600px;
+    min-width: 560px;
+    width: 100%;
 
     @include desktop {
-        width: 720px;
+        min-width: 720px;
+        width: 100%;
     }
 
     @include tablets-l {
-        width: 500px;
+        min-width: 460px;
+        width: 100%;
     }
 
     @include tablets {
         width: 100%;
+        margin: 0;
+        min-width: initial;
     }
 }
 
@@ -58,10 +66,6 @@
     padding-bottom: 30px;
 }
 
-.blog__text_service-in {
-    padding-bottom: 130px;
-}
-
 .blog__image {
     width: 100%;
     height: auto;
@@ -78,6 +82,7 @@
 
 .blog__pic {
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -86,28 +91,30 @@
     font-size: 16px;
     text-align: end;
     margin-top: 50px;
-    margin-bottom: 130px;
 
     @include phones {
         margin-top: 10px;
-        margin-bottom: 60px;
     }
 }
 
 .aside {
-    width: 300px;
+    min-width: 280px;
+    width: 100%;
     margin-left: 20px;
 
     @include desktop {
-        width: 358px;
+        min-width: 358px;
+        width: 100%;
     }
 
     @include tablets-l {
-        width: 250px;
+        min-width: 230px;
+        width: 100%;
     }
 
     @include tablets {
-        display: none;
+        margin-top: 60px;
+        width: 250px;
     }
 }
 

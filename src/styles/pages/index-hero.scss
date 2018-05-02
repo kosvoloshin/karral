@@ -180,8 +180,18 @@
 
         &:hover {
             .menu__link {
-                border-bottom: 2px solid #000;
+                color: #c32328;
             }
+        }
+    }
+}
+
+.menu__item.active {
+    .menu__link {
+        color: #000;
+        
+        @include tablets {
+            color: #c32328;
         }
     }
 }

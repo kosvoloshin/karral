@@ -176,6 +176,7 @@
         width: 100%;
         height: 40%;
         justify-content: initial;
+        padding: 0;
     }
 }
 
@@ -194,7 +195,8 @@
     }
 
     @include phones {
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
     }
 }
