@@ -39,6 +39,7 @@
     max-width: 940px;
     margin: 0 auto;
     justify-content: space-between;
+    padding-bottom: 70px;
 
     @include desktop {
         max-width: 1140px;
