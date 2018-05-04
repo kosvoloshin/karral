@@ -1,0 +1,109 @@
+extends ../template
+
+block variables
+    - var title = 'Объекты'
+
+block content
+    .wrapper
+        header.header
+            .header__top
+                .header__wrap
+                    .header__text Комплексные решения в сфере строительных услуг
+                    .header__contacts
+                        ul.contacts
+                            li.contacts__item info@carral.com
+                            li.contacts__item +00(123)456 78 90
+                            li.contacts__item +00(123)456 78 90
+            .header__main
+                .header__logo
+                    a.logo(href="index.html"): img.logo__img(alt="logo" src="./assets/images/logo.png")
+                .menu
+                    ul.menu__list
+                        li.menu__item: a.menu__link(href="index.html") ГЛАВНАЯ
+                        li.menu__item: a.menu__link(href="#") О КОМПАНИИ
+                        li.menu__item: a.menu__link(href="service.html") УСЛУГИ
+                        li.menu__item.active: a.menu__link(href="objects.html") ОБЪЕКТЫ
+                        li.menu__item: a.menu__link(href="news.html") НОВОСТИ
+                        li.menu__item: a.menu__link(href="#") ДОКУМЕНТЫ
+                        li.menu__item: a.menu__link(href="#") КОНТАКТЫ
+                button(type="button").hamburger#openFull
+                    .hamburger__menu
+        .crumbs
+            ul.crumbs__list
+                li.crumbs__item
+                    a.crumbs__link(href="index.html"): img.crumbs__breadcrumbs(alt="home" src="./assets/images/home.png")
+                li.crumbs__item
+                    a.crumbs__link(href="#"): img.crumbs__breadcrumbs.crumbs__breadcrumbs_arrow(alt="arrow" src="./assets/images/arrow.png")    
+                li.crumbs__item 
+                    a.crumbs__link(href="objects.html") 
+                        .crumbs__breadcrumbs Объекты   
+                li.crumbs__item
+                    a.crumbs__link(href="#"): img.crumbs__breadcrumbs.crumbs__breadcrumbs_arrow(alt="arrow" src="./assets/images/arrow-left.png")
+                li.crumbs__item 
+                    a.crumbs__link(href="#") 
+                        .crumbs__breadcrumbs Александры Монаховой 98 к 1
+        section.section.objects
+            h1.visuallyhidden Objects
+            .objects__desc
+               h2.objects__title Александры Монаховойр 98 к 1
+               .objects__text
+                    p Срок: 2 месяца.
+                        br
+                        | Стоимость: 230 993 грн.
+                        br
+                        | Характеристики:
+                        br
+                        | Общая площадь дома – 44 621,55 кв,м
+                        br
+                        | Этажность – 18-23 этажей 
+                        br
+                        | Общая площадь квартир – 29 993,18 кв,м
+                        br
+                        | Количество квартир – 284
+                        br
+                        | Общая площадь офисов – 3 304,16 кв,м
+            ul.aside__list.aside__list_page
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+                li.aside__item: img.aside__item-img(alt="object" src="./assets/images/blog-image-1.jpg")
+        .pagination.pagination_obj
+            button(type="button").controls.controls_pagination
+                .controls__triangle-prev
+            ul.pagination__list
+                li.pagination__item: a.pagination__link(href="#") 1
+                li.pagination__item: a.pagination__link(href="#") ...
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 31
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 32
+                li.pagination__item: a.pagination__link.active(href="#") 33
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 34
+                li.pagination__item.pagination__item_hidden: a.pagination__link(href="#") 35
+                li.pagination__item: a.pagination__link(href="#") ...
+                li.pagination__item: a.pagination__link(href="#") 87
+            button(type="button").controls.controls_pagination
+                .controls__triangle-next
+        footer.footer
+            .footer__content
+                .footer__info
+                    .footer__logo
+                        a.logo(href="index.html"): img.logo__img(alt="logo" src="./assets/images/logo-footer.png")
+                    .footer__text Комплексные решения в сфере строительных услуг
+                    .footer__copy © 2018 Строительная компания "Каррал".
+                .footer__nav
+                    h3.footer__nav-title Навигация
+                    ul.footer__nav-list
+                        li.footer__nav-item: a.footer__nav-link(href="index.html") Главная
+                        li.footer__nav-item: a.footer__nav-link(href="service.html") Услуги
+                        li.footer__nav-item: a.footer__nav-link(href="news.html") Новости
+                        li.footer__nav-item: a.footer__nav-link(href="#") Контакты
+                        li.footer__nav-item: a.footer__nav-link(href="#") О компании
+                        li.footer__nav-item.active: a.footer__nav-link(href="objects.html") Объекты
+                        li.footer__nav-item: a.footer__nav-link(href="#") Документы
