@@ -51,8 +51,10 @@
     
     @include tablets {
         width: 100%; 
-        padding: 10px 0; 
-        text-align: center;  
+    }
+
+    @include phones {
+        width: 90%;
     }
 }
 
@@ -70,6 +72,10 @@
         width: 100%;   
         padding: 0 0 10px 0; 
     }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .contacts {
@@ -78,12 +84,8 @@
     justify-content: flex-end;
 
     @include tablets {
-        justify-content: center;    
-    }
-
-    @include phones {
-        flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 }
 
@@ -100,6 +102,14 @@
         }
     }
 
+    @include tablets {
+        width: 50%;
+
+        &:first-child {
+            width: 100%;
+        }
+    }
+
     @include phones {
         padding-right: 0;
     }
@@ -113,9 +123,8 @@
     position: relative;
 
     @include tablets {
-        height: 90px;
+        height: 117px;
         align-items: center;  
-        justify-content: space-around;  
     }
 }
 
@@ -123,7 +132,8 @@
     padding-top: 20px;
 
     @include tablets {
-        padding-top: 0;    
+        margin-bottom: 25px;  
+        padding: 0;  
     }
 }
 
@@ -144,15 +154,18 @@
     }
 
     @include tablets {
-        height: 0;
+        height: 54px;
         transition: height 0.7s;
         position: absolute;
-        top: 80%;
+        top: 78%;
         z-index: 15;
-        width: 100%;
+        width: 420px;
         overflow: hidden;
-        background-color: #fff;
-        box-shadow: none;
+        background-color: #c32328;
+    }
+
+    @include phones {
+        width: 320px;
     }
 }
 
@@ -176,11 +189,10 @@
     flex-grow: 1;
 
     @include tablets {
-        background-color: initial;
 
         &:hover {
             .menu__link {
-                color: #c32328;
+                color: #000;
             }
         }
     }
@@ -189,10 +201,6 @@
 .menu__item.active {
     .menu__link {
         color: #000;
-        
-        @include tablets {
-            color: #c32328;
-        }
     }
 }
 
@@ -222,7 +230,6 @@
         text-decoration: none;
         font-family: 'Open Sans bold';
         font-size: 13px;
-        color: #000;
         transition: .2s;
         border-bottom: 2px solid transparent;
     }
@@ -231,21 +238,23 @@
 .hamburger {
     display: none;
     cursor: pointer;
-    height: 40px;
-    width: 52px;
+    height: 25px;
+    width: 40px;
     background: none;
     border: initial;
+    margin: 0 auto;
+    margin-top: 12px;
 
     &:hover {
         .hamburger__menu {
-            background: rgba($color: #000, $alpha: 1.0);
+            background: rgba($color: #fff, $alpha: 1.0);
 
             &:before {
-                background: rgba($color: #000, $alpha: 1.0);
+                background: rgba($color: #fff, $alpha: 1.0);
             }
 
             &:after {
-                background: rgba($color: #000, $alpha: 1.0);
+                background: rgba($color: #fff, $alpha: 1.0);
             }
         }
     }
@@ -257,9 +266,9 @@
 
 .hamburger__menu {
     display: inline-block;
-    background: rgba($color: #000, $alpha: 0.7);
-    width: 40px;
-    height: 5px;
+    background: rgba($color: #fff, $alpha: 0.8);
+    width: 16px;
+    height: 3px;
     border-radius: 2px;
     position: relative;
     transition: .3s;
@@ -275,23 +284,23 @@
     
     &:before {
         content: "";
-        background: rgba($color: #000, $alpha: 0.7);
-        width: 40px;
-        height: 5px;
+        background: rgba($color: #fff, $alpha: 0.8);
+        width: 16px;
+        height: 3px;
         border-radius: 2px;
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: 0;
     }
 
     &:after {
         content: "";
-        background: rgba($color: #000, $alpha: 0.7);
-        width: 40px;
-        height: 5px;
+        background: rgba($color: #fff, $alpha: 0.8);
+        width: 16px;
+        height: 3px;
         border-radius: 2px;
         position: absolute;
-        bottom: 10px;
+        bottom: 5px;
         left: 0;
     }
 }
@@ -335,7 +344,7 @@
     }
 
     @include phones {
-        height: 335px;
+        height: 370px;
     }
 }
 

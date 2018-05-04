@@ -18,6 +18,8 @@ block content
                 .header__logo
                     a.logo(href="index.html"): img.logo__img(alt="logo" src="./assets/images/logo.png")
                 .menu
+                    button(type="button").hamburger#openFull
+                        .hamburger__menu
                     ul.menu__list
                         li.menu__item: a.menu__link(href="index.html") ГЛАВНАЯ
                         li.menu__item: a.menu__link(href="#") О КОМПАНИИ
@@ -26,8 +28,6 @@ block content
                         li.menu__item.active: a.menu__link(href="news.html") НОВОСТИ
                         li.menu__item: a.menu__link(href="#") ДОКУМЕНТЫ
                         li.menu__item: a.menu__link(href="#") КОНТАКТЫ
-                button(type="button").hamburger#openFull
-                    .hamburger__menu
         include ../common/crumbs.pug
         section.section.news.news_not-shadow
             h1.visuallyhidden News
