@@ -10,14 +10,35 @@
 .service__desc {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
     padding-top: 75px;
     padding-bottom: 60px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 940px;
+
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        max-width: 1140px;
+    }
 
     @include tablets {
         padding-top: 35px;
         padding-bottom: 30px;
+        font-size: 14px;
+        max-width: 420px;
+    }
+
+    @include phones {
+        font-size: 13px;
+        width: 90%;
+        overflow: hidden;
     }
 }
 
@@ -45,7 +66,7 @@
         text-align: center;
     }
 }
-
+/*
 .service__text {
     font-family: 'Open Sans reg';
     font-size: 16px;
@@ -67,7 +88,7 @@
         width: 90%;
         overflow: hidden;
     }
-}
+}*/
 
 .service__content {
     margin: 0 auto;

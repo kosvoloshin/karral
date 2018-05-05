@@ -59,13 +59,13 @@
     padding-bottom: 30px;
 }
 
-.blog__text {
+/*.blog__text {
     width: 100%;
     font-family: 'Open Sans reg';
     font-size: 16px;
     padding-bottom: 30px;
-}
-
+}*/
+/*
 .blog__image {
     width: 100%;
     height: auto;
@@ -78,12 +78,13 @@
     @include tablets-l {
         height: auto;
     }
-}
+}*/
 
 .blog__pic {
     max-width: 100%;
     width: 100%;
     height: auto;
+    margin: 30px 0;
 }
 
 .blog__date {
@@ -158,6 +159,7 @@
 
 .aside__button {
     text-align: center;
+    margin-top: 45px;
 }
 
 .aside__link {

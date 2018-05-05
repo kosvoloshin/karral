@@ -167,6 +167,10 @@
         justify-content: initial;
         padding: 0;
     }
+
+    p {
+        font-size: 14px;
+    }
 }
 
 .news-desc__title {
@@ -190,7 +194,7 @@
     }
 }
 
-.news-desc__text {
+/*.news-desc__text {
     font-family: 'Open Sans reg';
     font-size: 14px;
     color: #000;
@@ -208,7 +212,7 @@
     @include phones {
         display: none;
     }
-}
+}*/
 
 .news-desc__btn {
     text-align: center;
@@ -219,7 +223,8 @@
     }
 
     @include tablets {
-        margin-bottom: 8px;    
+        margin-bottom: 8px;   
+        margin-top: 20px; 
     }
 }
 
