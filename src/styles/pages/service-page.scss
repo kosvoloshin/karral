@@ -75,6 +75,11 @@
     width: 100%;
     height: initial;
     cursor: initial;
+    margin-bottom: 75px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .service__item_page:nth-child(1) {
@@ -117,7 +122,6 @@
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
 }
 
 .service__text_page {
@@ -130,8 +134,8 @@
 
 .service__button_page {
     text-align: end;
-    margin-bottom: 75px;
     margin-top: 45px;
+    //margin-bottom: 75px;
 }
 
 .service__link_page {
@@ -188,10 +192,6 @@
 
 .aside__item {
     margin-bottom: 27px;
-
-    p {
-        font-size: 15px;
-    }
 
     &:last-child {
         margin-bottom: 0;
@@ -276,7 +276,6 @@
     width: 100%;
     height: 180px;
     position: relative;
-    margin-top: 18px;
 
     @include desktop {
         height: 220px;
@@ -300,14 +299,6 @@
         .news__image {
             order: 0;
         }
-    }
-
-    .news-desc__title {
-        margin-bottom: 25px;
-    }
-
-    .news-desc__btn {
-        margin-top: 35px;
     }
 }
 
