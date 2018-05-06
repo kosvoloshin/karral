@@ -167,10 +167,6 @@
         justify-content: initial;
         padding: 0;
     }
-
-    /*p {
-        font-size: 14px;
-    }*/
 }
 
 .news-desc__title {
@@ -224,7 +220,6 @@
 
     @include tablets {
         margin-bottom: 8px;   
-        //margin-top: 20px; 
     }
 }
 
