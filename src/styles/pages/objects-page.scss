@@ -75,7 +75,6 @@
 
         @include tablets {
             width: 100%;
-            display: block;
         }
     }
 
@@ -90,6 +89,26 @@
 
         @include phones {
             height: 200px;
+        }
+    }
+
+    .aside__item-link {
+        position: relative;
+
+        &:hover {
+            .image-wrap {
+                background-color: rgba(0, 0, 0, 0.7);
+                transition: .2s;
+            }
+            .service__link {
+                background-color: #c32328;
+                transition: .2s;
+            }
+    
+            .image-wrap__zoom {
+                opacity: 1;
+                transition: .2s;
+            }
         }
     }
 
@@ -109,5 +128,17 @@
             width: 100%;
             display: block;
         }
+    }
+
+    .image-wrap {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 98%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .image-wrap__zoom {
+        top: 50%;
     }
 }
