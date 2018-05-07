@@ -2393,11 +2393,9 @@ else
 
 })();
 
-/////////////////////////////////////////////////////////////////////////// анимация в секции услуги
-
-if($('.animate').length){
-    $("document").ready(function($){
-  
+/////////////////////////////////////////////////////////////////////////// анимация, паралакс в секции услуги
+$(document).ready(function() {
+    if($('#animate').length){
         var animate = $('.animate');
        
         $(window).scroll(function () {
@@ -2405,14 +2403,8 @@ if($('.animate').length){
             animate.addClass("active");
           }
         });
-    });
-}
 
-/////////////////////////////////////////////////////////////////////////// паралакс в секции услуги
-
-if($('#animate').length){
-    var isMobile = false;
-    $(document).ready( function() {
+        var isMobile = false;
         if ($('body').width() <= 768) {
             isMobile = true;
         }
@@ -2435,9 +2427,9 @@ if($('#animate').length){
               image = layer.firstElementChild;
   
             layer.style.transform = transformString;
-          });
+        });
     };
     window.addEventListener('mousemove', moveLayers);
+    };
     }
-    });
-}
+});
