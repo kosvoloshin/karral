@@ -134,11 +134,24 @@
         position: absolute;
         width: 100%;
         top: 0;
-        height: 98%;
         background-color: rgba(0, 0, 0, 0);
     }
 
     .image-wrap__zoom {
         top: 50%;
+    }
+}
+
+.aside__list_page-in {
+    .image-wrap {
+        height: 98%;
+
+        @include tablets-l {
+            height: 97%;
+        }
+
+        @include tablets {
+            height: 100%;
+        }
     }
 }
